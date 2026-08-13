@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formation Création de Site Web</title>
+<style>
+*{margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif;}
+body{background:#f5f7fb;}
+header{background:#0d6efd; color:white; padding:15px; position:sticky; top:0; z-index:1000;}
+nav{display:flex; justify-content:space-between; align-items:center;}
+nav h2{font-size:20px;}
+nav ul{display:flex; list-style:none;}
+nav ul li{margin-left:20px;}
+nav ul li a{color:white; text-decoration:none; font-weight:bold; transition:0.3s;}
+nav ul li a:hover{color:#ffc107;}
+section{padding:60px 20px; max-width:1000px; margin:auto;}
+.card{background:white; padding:20px; margin-top:20px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); transition:0.3s;}
+.card:hover{transform:translateY(-5px);}
+.btn{display:inline-block; margin-top:20px; background:#25D366; color:white; padding:15px 25px; border-radius:8px; text-decoration:none;}
+footer{text-align:center; padding:20px; background:#222; color:white;}
+/* Mobile */
+@media(max-width:768px){
+    nav ul{flex-direction:column; background:#0d6efd; position:absolute; top:60px; right:0; width:200px; display:none;}
+    nav ul.active{display:block;}
+    nav ul li{margin:10px;}
+    .menu-toggle{cursor:pointer; font-size:20px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<h2>Formation Web</h2>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<ul id="menu">
+<li><a href="#home">🏠 Accueil</a></li>
+<li><a href="#html">📘 HTML</a></li>
+<li><a href="#css">🎨 CSS</a></li>
+<li><a href="#js">⚙️ JavaScript</a></li>
+<li><a href="#contact">📱 Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="home">
+<h1>🔥 Bienvenue à la Formation</h1>
+<div class="card">
+<p>Apprends à créer ton site web de A à Z. Cette formation est gratuite et te guidera étape par étape :</p>
+<ul>
+<li>Comment Créer un site complet</li>
+<li>Comment Mettre ton site web en ligne</li>
+<li>Comment Gagner de l'argent avec ton site</li>
+</ul>
+</div>
+</section>
+
+<section id="html">
+<h1>📘 Module 1 : HTML</h1>
+<div class="card">
+<p>HTML permet de créer la structure du site web.</p>
+<pre>
+&lt;h1&gt;Bienvenue&lt;/h1&gt;
+&lt;p&gt;Mon site web&lt;/p&gt;
+&lt;a href=\"#\"&gt;Clique ici&lt;/a&gt;
+</pre>
+<p>Avec HTML tu peux créer :</p>
+<ul>
+<li>Titres</li>
+<li>Paragraphes</li>
+<li>Boutons et liens</li>
+<li>Images</li>
+</ul>
+</div>
+</section>
+
+<section id="css">
+<h1>🎨 Module 2 : CSS</h1>
+<div class="card">
+<p>CSS rend ton site beau et stylé.</p>
+<pre>
+body {
+ background: blue;
+ color: white;
+}
+</pre>
+<p>Avec CSS tu peux :</p>
+<ul>
+<li>Ajouter des couleurs</li>
+<li>Modifier les polices et tailles</li>
+<li>Créer des mises en page modernes</li>
+<li>Rendre ton site responsive</li>
+</ul>
+</div>
+</section>
+
+<section id="js">
+<h1>⚙️ Module 3 : JavaScript</h1>
+<div class="card">
+<p>JavaScript ajoute de l’interactivité sur ton site.</p>
+<pre>
+alert("Bienvenue sur mon site !");
+</pre>
+<p>Avec JavaScript tu peux :</p>
+<ul>
+<li>Réagir aux clics</li>
+<li>Créer des animations</li>
+<li>Afficher des messages dynamiques</li>
+</ul>
+</div>
+</section>
+
+<section id="contact">
+<h1>📱 Contact</h1>
+<div class="card">
+<p>La formation est gratuite. Si tu veux un accompagnement personnalisé ou créer ton site avec moi, contacte-moi sur WhatsApp :</p>
+<a class="btn" href="https://wa.me/22941670659?text=Bonjour%20je%20suis%20intéressé%20par%20la%20formation" target="_blank">WhatsApp</a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Formation Web</p>
+</footer>
+
+<script>
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
